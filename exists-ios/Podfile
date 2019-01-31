@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'exists-ios' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for exists-ios
+
+  target 'exists-iosTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'exists-iosUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+flutter_application_path = '../my_flutter/'
+eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
